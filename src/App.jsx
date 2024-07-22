@@ -1,14 +1,12 @@
-import React from 'react'
-import Home from './components/Home';
-import { useSelector } from 'react-redux';
-import Addtodo from './components/Addtodo';
-const App = () => {
- 
+import AddTodo from './components/AddTodo'; 
+import Todos from './components/Todos';
+function App() {
+  
   return (
-    <div className='bg-emerald-300 flex flex-col justify-center items-center h-screen'>
-      <h1 className='text-xl font-bold'>Todo List using Redux Toolkit</h1>
-      <Addtodo/>
-      <Home/>
+    <div className='flex flex-col justify-center items-center h-screen bg-slate-400'>
+      <h1>Learn about redux toolkit</h1>
+      <AddTodo />
+      <Todos />
     </div>
   )
 }
